@@ -14499,9 +14499,9 @@
     {
       "Annotation": "PreprocessJS docs/index.html",
       "DisplayName": "PreprocessJS index",
-      "Action": "cd /d \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/index.html'\"  \"locals.outputPath='D\\x3a/Programming/The\\x5fBrainrot\\x5fLabyrinth/docs/index.html'\"  \"locals.webglIncludes='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='The\\x5fBrainrot\\x5fLabyrinth'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data'\" \"FRAMEWORK_FILENAME='docs.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.45f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='docs.loader.js'\"",
+      "Action": "cd /d \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='D\\x3a/Programming/The\\x5fBrainrot\\x5fLabyrinth/docs/index.html'\"  \"locals.webglIncludes='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='The\\x5fBrainrot\\x5fLabyrinth'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data'\" \"FRAMEWORK_FILENAME='docs.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.45f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='docs.loader.js'\"",
       "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/index.html"
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html"
       ],
       "Outputs": [
         "docs/index.html"
@@ -14511,152 +14511,148 @@
       "DebugActionIndex": 300
     },
     {
-      "Annotation": "PreprocessJS docs/manifest.webmanifest",
-      "DisplayName": "PreprocessJS manifest",
-      "Action": "cd /d \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/manifest.webmanifest'\"  \"locals.outputPath='D\\x3a/Programming/The\\x5fBrainrot\\x5fLabyrinth/docs/manifest.webmanifest'\"  \"locals.webglIncludes='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='The\\x5fBrainrot\\x5fLabyrinth'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data'\" \"FRAMEWORK_FILENAME='docs.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.45f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='docs.loader.js'\"",
-      "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/manifest.webmanifest"
-      ],
-      "Outputs": [
-        "docs/manifest.webmanifest"
-      ],
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 301
-    },
-    {
-      "Annotation": "PreprocessJS docs/ServiceWorker.js",
-      "DisplayName": "PreprocessJS ServiceWorker",
-      "Action": "cd /d \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/ServiceWorker.js'\"  \"locals.outputPath='D\\x3a/Programming/The\\x5fBrainrot\\x5fLabyrinth/docs/ServiceWorker.js'\"  \"locals.webglIncludes='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='The\\x5fBrainrot\\x5fLabyrinth'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data'\" \"FRAMEWORK_FILENAME='docs.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.45f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='docs.loader.js'\"",
-      "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/ServiceWorker.js"
-      ],
-      "Outputs": [
-        "docs/ServiceWorker.js"
-      ],
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 302
-    },
-    {
       "Annotation": "CopyFiles docs/TemplateData/favicon.ico",
       "DisplayName": "Copying favicon.ico",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/favicon.ico"
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/favicon.ico"
       ],
       "Outputs": [
         "docs/TemplateData/favicon.ico"
       ],
+      "DebugActionIndex": 301
+    },
+    {
+      "Annotation": "CopyFiles docs/TemplateData/fullscreen-button.png",
+      "DisplayName": "Copying fullscreen-button.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/fullscreen-button.png"
+      ],
+      "Outputs": [
+        "docs/TemplateData/fullscreen-button.png"
+      ],
+      "DebugActionIndex": 302
+    },
+    {
+      "Annotation": "CopyFiles docs/TemplateData/MemoryProfiler.png",
+      "DisplayName": "Copying MemoryProfiler.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/MemoryProfiler.png"
+      ],
+      "Outputs": [
+        "docs/TemplateData/MemoryProfiler.png"
+      ],
       "DebugActionIndex": 303
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/icons/unity-logo-dark.png",
-      "DisplayName": "Copying unity-logo-dark.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/icons/unity-logo-dark.png"
-      ],
-      "Outputs": [
-        "docs/TemplateData/icons/unity-logo-dark.png"
-      ],
-      "DebugActionIndex": 304
-    },
-    {
-      "Annotation": "CopyFiles docs/TemplateData/icons/unity-logo-light.png",
-      "DisplayName": "Copying unity-logo-light.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/icons/unity-logo-light.png"
-      ],
-      "Outputs": [
-        "docs/TemplateData/icons/unity-logo-light.png"
-      ],
-      "DebugActionIndex": 305
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/progress-bar-empty-dark.png",
       "DisplayName": "Copying progress-bar-empty-dark.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/progress-bar-empty-dark.png"
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-empty-dark.png"
       ],
       "Outputs": [
         "docs/TemplateData/progress-bar-empty-dark.png"
       ],
-      "DebugActionIndex": 306
+      "DebugActionIndex": 304
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/progress-bar-empty-light.png",
       "DisplayName": "Copying progress-bar-empty-light.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/progress-bar-empty-light.png"
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-empty-light.png"
       ],
       "Outputs": [
         "docs/TemplateData/progress-bar-empty-light.png"
       ],
-      "DebugActionIndex": 307
+      "DebugActionIndex": 305
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/progress-bar-full-dark.png",
       "DisplayName": "Copying progress-bar-full-dark.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/progress-bar-full-dark.png"
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-full-dark.png"
       ],
       "Outputs": [
         "docs/TemplateData/progress-bar-full-dark.png"
       ],
-      "DebugActionIndex": 308
+      "DebugActionIndex": 306
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/progress-bar-full-light.png",
       "DisplayName": "Copying progress-bar-full-light.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/progress-bar-full-light.png"
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-full-light.png"
       ],
       "Outputs": [
         "docs/TemplateData/progress-bar-full-light.png"
       ],
-      "DebugActionIndex": 309
+      "DebugActionIndex": 307
     },
     {
       "Annotation": "PreprocessJS docs/TemplateData/style.css",
       "DisplayName": "PreprocessJS style",
-      "Action": "cd /d \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/style.css'\"  \"locals.outputPath='D\\x3a/Programming/The\\x5fBrainrot\\x5fLabyrinth/docs/TemplateData/style.css'\"  \"locals.webglIncludes='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='The\\x5fBrainrot\\x5fLabyrinth'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data'\" \"FRAMEWORK_FILENAME='docs.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.45f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='docs.loader.js'\"",
+      "Action": "cd /d \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='D\\x3a/Programming/The\\x5fBrainrot\\x5fLabyrinth/docs/TemplateData/style.css'\"  \"locals.webglIncludes='D\\x3a/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"PRODUCT_DESCRIPTION=''\" \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='The\\x5fBrainrot\\x5fLabyrinth'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='docs.data'\" \"FRAMEWORK_FILENAME='docs.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='docs.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.45f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='docs.loader.js'\"",
       "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/style.css"
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css"
       ],
       "Outputs": [
         "docs/TemplateData/style.css"
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 310
+      "DebugActionIndex": 308
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/unity-logo-dark.png",
       "DisplayName": "Copying unity-logo-dark.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/unity-logo-dark.png"
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/unity-logo-dark.png"
       ],
       "Outputs": [
         "docs/TemplateData/unity-logo-dark.png"
       ],
-      "DebugActionIndex": 311
+      "DebugActionIndex": 309
     },
     {
       "Annotation": "CopyFiles docs/TemplateData/unity-logo-light.png",
       "DisplayName": "Copying unity-logo-light.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA/TemplateData/unity-logo-light.png"
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/unity-logo-light.png"
       ],
       "Outputs": [
         "docs/TemplateData/unity-logo-light.png"
+      ],
+      "DebugActionIndex": 310
+    },
+    {
+      "Annotation": "CopyFiles docs/TemplateData/webgl-logo.png",
+      "DisplayName": "Copying webgl-logo.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/webgl-logo.png"
+      ],
+      "Outputs": [
+        "docs/TemplateData/webgl-logo.png"
+      ],
+      "DebugActionIndex": 311
+    },
+    {
+      "Annotation": "CopyFiles docs/TemplateData/webmemd-icon.png",
+      "DisplayName": "Copying webmemd-icon.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/webmemd-icon.png"
+      ],
+      "Outputs": [
+        "docs/TemplateData/webmemd-icon.png"
       ],
       "DebugActionIndex": 312
     },
@@ -15008,7 +15004,7 @@
       "Filter": "*.js"
     },
     {
-      "Path": "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/PWA",
+      "Path": "D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default",
       "Recurse": 1
     },
     {
