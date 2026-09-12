@@ -477,6 +477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* CameraRaycastHelper_RaycastTry2D_Injected_m2620821FE8CB793C314AAE43E3B4C7BEAE5D4C9E (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___0_cam, Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00* ___1_ray, float ___2_distance, int32_t ___3_layerMask, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float InputUnsafeUtility_GetAxis_m034889C00C914572B94F091E8EC646E86408A29F (String_t* ___0_axisName, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyInt_m2FFCC49AF36B74247CC1B412E9787A15D0984E95 (int32_t ___0_key, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyUpInt_mB26B433DD3A21ACAF04D23252B09068EFFEDA0F9 (int32_t ___0_key, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDownInt_m0B655F969FCBC011BC2616E3E5A657CF7D76568A (int32_t ___0_key, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Input_get_mousePosition_Injected_m7EF43ADB535051F9182A366CA84951F946984E1A (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_ret, const RuntimeMethod* method) ;
 inline KeyValuePair_2_t657A531CD05C008B73C5D0F163CA4C219E650EBD Func_1_Invoke_m1D6B3CC8B29B304CD3DFCEF6E85A541051A1155F_inline (Func_1_tF5F7F5DCF1679E08B2536581A6E1EEF5529155C9* __this, const RuntimeMethod* method)
@@ -615,6 +616,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyInt_m2FFCC49AF36B74247CC1B41
 	bool icallRetVal = _il2cpp_icall_func(___0_key);
 	return icallRetVal;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyUpInt_mB26B433DD3A21ACAF04D23252B09068EFFEDA0F9 (int32_t ___0_key, const RuntimeMethod* method) 
+{
+	typedef bool (*Input_GetKeyUpInt_mB26B433DD3A21ACAF04D23252B09068EFFEDA0F9_ftn) (int32_t);
+	static Input_GetKeyUpInt_mB26B433DD3A21ACAF04D23252B09068EFFEDA0F9_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Input_GetKeyUpInt_mB26B433DD3A21ACAF04D23252B09068EFFEDA0F9_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetKeyUpInt(UnityEngine.KeyCode)");
+	bool icallRetVal = _il2cpp_icall_func(___0_key);
+	return icallRetVal;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDownInt_m0B655F969FCBC011BC2616E3E5A657CF7D76568A (int32_t ___0_key, const RuntimeMethod* method) 
 {
 	typedef bool (*Input_GetKeyDownInt_m0B655F969FCBC011BC2616E3E5A657CF7D76568A_ftn) (int32_t);
@@ -648,6 +658,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKey_mE5681EF775F3CEBA7EAD7C6398
 		int32_t L_0 = ___0_key;
 		bool L_1;
 		L_1 = Input_GetKeyInt_m2FFCC49AF36B74247CC1B412E9787A15D0984E95(L_0, NULL);
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyUp_m9A962E395811A9901E7E05F267E198A533DBEF2F (int32_t ___0_key, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_key;
+		bool L_1;
+		L_1 = Input_GetKeyUpInt_mB26B433DD3A21ACAF04D23252B09068EFFEDA0F9(L_0, NULL);
 		return L_1;
 	}
 }

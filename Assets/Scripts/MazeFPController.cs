@@ -7,21 +7,13 @@ public class MazeFPController : MonoBehaviour
     public float normalRadius = 0.8f;
 
     public Transform cameraPivot;
-    public Transform leftArmPivot;
-    public Transform rightArmPivot;
-    public Transform leftLegPivot;
-    public Transform rightLegPivot;
-    public float limbSwingAngle = 30f;
-    public float walkCycleSpeed = 6f;
-
-    public AudioSource footstepSource;
-    public AudioClip footstepClip;
+    public Animator animator;
 
     private CharacterController controller;
     private float yaw;
     private float pitch;
-    private float walkCyclePhase;
-    private int lastStepIndex = -1;
+    private float currentSpeed;
+    private Vector3 lastMoveDirection = Vector3.forward;
 
     void Awake()
     {
@@ -56,55 +48,44 @@ public class MazeFPController : MonoBehaviour
         Vector3 forwardHoriz = transform.forward;
         Vector3 rightHoriz = transform.right;
 
-        Vector3 move = Vector3.zero;
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) move += forwardHoriz;
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) move -= forwardHoriz;
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) move -= rightHoriz;
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) move += rightHoriz;
+        Vector3 inputDir = Vector3.zero;
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) inputDir += forwardHoriz;
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) inputDir -= forwardHoriz;
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) inputDir -= rightHoriz;
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) inputDir += rightHoriz;
 
-        bool isMoving = move.sqrMagnitude > 0.0001f;
-        if (move.sqrMagnitude > 1f) move.Normalize();
-
-        controller.radius = normalRadius;
-        controller.Move(move * moveSpeed * Time.deltaTime);
-
-        AnimateWalk(isMoving);
-    }
-
-    void AnimateWalk(bool isMoving)
-    {
+        bool isMoving = inputDir.sqrMagnitude > 0.0001f;
         if (isMoving)
         {
-            walkCyclePhase += Time.deltaTime * walkCycleSpeed;
-        }
-        else
-        {
-            walkCyclePhase = Mathf.MoveTowards(walkCyclePhase, Mathf.Round(walkCyclePhase / Mathf.PI) * Mathf.PI, Time.deltaTime * walkCycleSpeed);
+            inputDir.Normalize();
+            lastMoveDirection = inputDir;
         }
 
-        float swing = Mathf.Sin(walkCyclePhase) * limbSwingAngle;
+        bool forwardHeld = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
+        bool backHeld = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
+        bool backTapReleased = (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow)) && forwardHeld;
+        bool forwardTapReleased = (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow)) && backHeld;
+        bool hardStop = backTapReleased || forwardTapReleased;
 
-        if (leftLegPivot != null) leftLegPivot.localRotation = Quaternion.Euler(swing, 0f, 0f);
-        if (rightLegPivot != null) rightLegPivot.localRotation = Quaternion.Euler(-swing, 0f, 0f);
-        if (leftArmPivot != null) leftArmPivot.localRotation = Quaternion.Euler(-swing, 0f, 0f);
-        if (rightArmPivot != null) rightArmPivot.localRotation = Quaternion.Euler(swing, 0f, 0f);
-
-        if (isMoving)
+        if (hardStop)
         {
-            int stepIndex = Mathf.FloorToInt(walkCyclePhase / Mathf.PI);
-            if (stepIndex != lastStepIndex)
+            currentSpeed = 0f;
+            if (animator != null)
             {
-                lastStepIndex = stepIndex;
-                if (footstepSource != null && footstepClip != null)
-                {
-                    footstepSource.pitch = (stepIndex % 2 == 0) ? 1.0f : 0.94f;
-                    footstepSource.PlayOneShot(footstepClip);
-                }
+                animator.SetBool("IsMoving", false);
+                animator.Play("Standing Idle", 0, 0f);
             }
         }
         else
         {
-            lastStepIndex = -1;
+            if (animator != null) animator.SetBool("IsMoving", isMoving);
+            currentSpeed = isMoving ? moveSpeed : 0f;
+        }
+
+        controller.radius = normalRadius;
+        if (currentSpeed > 0.0001f)
+        {
+            controller.Move(lastMoveDirection * currentSpeed * Time.deltaTime);
         }
     }
 }

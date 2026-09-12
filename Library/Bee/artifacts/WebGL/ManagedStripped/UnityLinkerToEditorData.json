@@ -2,6 +2,61 @@
   "report": {
     "modules": [
       {
+        "name": "Animation",
+        "dependencies": [
+          {
+            "name": "AnimationClip",
+            "scenes": [
+              "Assets/Scenes/SampleScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Animator",
+            "scenes": [
+              "Assets/Scenes/SampleScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AnimatorController",
+            "scenes": [
+              "Assets/Scenes/SampleScene.unity"
+            ],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "AnimatorOverrideController",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Avatar",
+            "scenes": [
+              "Assets/Scenes/SampleScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Motion",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "RuntimeAnimatorController",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          }
+        ]
+      },
+      {
         "name": "Audio",
         "dependencies": [
           {
@@ -334,6 +389,14 @@
             "icon": null
           },
           {
+            "name": "SkinnedMeshRenderer",
+            "scenes": [
+              "Assets/Scenes/SampleScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Sprite",
             "scenes": [],
             "dependencyType": 0,
@@ -394,6 +457,12 @@
             ],
             "dependencyType": 0,
             "icon": null
+          },
+          {
+            "name": "Required by Animation Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.animation"
           },
           {
             "name": "Required by Audio Module",
@@ -503,6 +572,12 @@
       {
         "name": "SharedInternals",
         "dependencies": [
+          {
+            "name": "Required by Animation Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.animation"
+          },
           {
             "name": "Required by Audio Module",
             "scenes": [],

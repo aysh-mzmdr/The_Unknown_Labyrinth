@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - MazeFPController
+    - WalkingAudioSync
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -35,6 +36,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -43,13 +46,23 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 4732}
+    - Class: 114
+      Script: {instanceID: 42062}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -444,7 +457,7 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
-      Hash: d751820221cb0dee0abb97f756b9e6e3
+      Hash: 421cc53db88e8a924db81e73b4a7f3ba
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MazeFPController
@@ -886,6 +899,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: fca634e18e4fffc5f7c7f1c715c9c6ab
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WalkingAudioSync
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

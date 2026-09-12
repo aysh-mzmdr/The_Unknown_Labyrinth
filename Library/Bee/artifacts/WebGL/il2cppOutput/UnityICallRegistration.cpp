@@ -56,15 +56,47 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.AnimationCurve
 
+	//Start Registrations for type : UnityEngine.Animations.AnimationLayerMixerPlayable
+
+		//System.Void UnityEngine.Animations.AnimationLayerMixerPlayable::SetSingleLayerOptimizationInternal(UnityEngine.Playables.PlayableHandle&,System.Boolean)
+		void Register_UnityEngine_Animations_AnimationLayerMixerPlayable_SetSingleLayerOptimizationInternal();
+		Register_UnityEngine_Animations_AnimationLayerMixerPlayable_SetSingleLayerOptimizationInternal();
+
+	//End Registrations for type : UnityEngine.Animations.AnimationLayerMixerPlayable
+
+	//Start Registrations for type : UnityEngine.Animator
+
+		//System.Int32 UnityEngine.Animator::StringToHash(System.String)
+		void Register_UnityEngine_Animator_StringToHash();
+		Register_UnityEngine_Animator_StringToHash();
+
+		//System.Void UnityEngine.Animator::Play(System.Int32,System.Int32,System.Single)
+		void Register_UnityEngine_Animator_Play();
+		Register_UnityEngine_Animator_Play();
+
+		//System.Void UnityEngine.Animator::SetBoolString(System.String,System.Boolean)
+		void Register_UnityEngine_Animator_SetBoolString();
+		Register_UnityEngine_Animator_SetBoolString();
+
+	//End Registrations for type : UnityEngine.Animator
+
 	//Start Registrations for type : UnityEngine.AudioSource
 
-		//System.Void UnityEngine.AudioSource::PlayOneShotHelper(UnityEngine.AudioSource,UnityEngine.AudioClip,System.Single)
-		void Register_UnityEngine_AudioSource_PlayOneShotHelper();
-		Register_UnityEngine_AudioSource_PlayOneShotHelper();
+		//System.Void UnityEngine.AudioSource::PlayHelper(UnityEngine.AudioSource,System.UInt64)
+		void Register_UnityEngine_AudioSource_PlayHelper();
+		Register_UnityEngine_AudioSource_PlayHelper();
 
-		//System.Void UnityEngine.AudioSource::SetPitch(UnityEngine.AudioSource,System.Single)
-		void Register_UnityEngine_AudioSource_SetPitch();
-		Register_UnityEngine_AudioSource_SetPitch();
+		//System.Void UnityEngine.AudioSource::Stop(System.Boolean)
+		void Register_UnityEngine_AudioSource_Stop();
+		Register_UnityEngine_AudioSource_Stop();
+
+		//System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
+		void Register_UnityEngine_AudioSource_set_clip();
+		Register_UnityEngine_AudioSource_set_clip();
+
+		//System.Void UnityEngine.AudioSource::set_loop(System.Boolean)
+		void Register_UnityEngine_AudioSource_set_loop();
+		Register_UnityEngine_AudioSource_set_loop();
 
 	//End Registrations for type : UnityEngine.AudioSource
 
@@ -310,6 +342,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_GetComponent();
 		Register_UnityEngine_GameObject_GetComponent();
 
+		//UnityEngine.Component UnityEngine.GameObject::GetComponentInParent(System.Type,System.Boolean)
+		void Register_UnityEngine_GameObject_GetComponentInParent();
+		Register_UnityEngine_GameObject_GetComponentInParent();
+
 	//End Registrations for type : UnityEngine.GameObject
 
 	//Start Registrations for type : UnityEngine.Gradient
@@ -349,6 +385,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.Input::GetKeyInt(UnityEngine.KeyCode)
 		void Register_UnityEngine_Input_GetKeyInt();
 		Register_UnityEngine_Input_GetKeyInt();
+
+		//System.Boolean UnityEngine.Input::GetKeyUpInt(UnityEngine.KeyCode)
+		void Register_UnityEngine_Input_GetKeyUpInt();
+		Register_UnityEngine_Input_GetKeyUpInt();
 
 		//System.Boolean UnityEngine.Input::GetMouseButton(System.Int32)
 		void Register_UnityEngine_Input_GetMouseButton();
@@ -635,6 +675,18 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_PhysicsScene_Internal_RaycastNonAlloc_Injected();
 
 	//End Registrations for type : UnityEngine.PhysicsScene
+
+	//Start Registrations for type : UnityEngine.Playables.PlayableHandle
+
+		//System.Boolean UnityEngine.Playables.PlayableHandle::IsValid_Injected(UnityEngine.Playables.PlayableHandle&)
+		void Register_UnityEngine_Playables_PlayableHandle_IsValid_Injected();
+		Register_UnityEngine_Playables_PlayableHandle_IsValid_Injected();
+
+		//System.Type UnityEngine.Playables.PlayableHandle::GetPlayableType_Injected(UnityEngine.Playables.PlayableHandle&)
+		void Register_UnityEngine_Playables_PlayableHandle_GetPlayableType_Injected();
+		Register_UnityEngine_Playables_PlayableHandle_GetPlayableType_Injected();
+
+	//End Registrations for type : UnityEngine.Playables.PlayableHandle
 
 	//Start Registrations for type : UnityEngine.PlayerConnectionInternal
 

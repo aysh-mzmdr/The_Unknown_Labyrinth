@@ -6940,19 +6940,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Atan_m653A85096EA3E38D6B599833723
 {
 	return atan(___0_d);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Floor_m77C769B5F801E9C36979F405F792ADA89B7E5269 (double ___0_d, const RuntimeMethod* method) 
-{
-	return floor(___0_d);
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Pow_mEAE651F0858203FBE12B72B6A53951BBD0FB5265 (double ___0_x, double ___1_y, const RuntimeMethod* method) 
 {
 	typedef double (*Math_Pow_mEAE651F0858203FBE12B72B6A53951BBD0FB5265_ftn) (double, double);
 	using namespace il2cpp::icalls;
 	return ((Math_Pow_mEAE651F0858203FBE12B72B6A53951BBD0FB5265_ftn)mscorlib::System::Math::Pow) (___0_x, ___1_y);
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Sin_m61D24F343A3600A65BEB0E45DD7EA32AAF880AC1 (double ___0_a, const RuntimeMethod* method) 
-{
-	return sin(___0_a);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Sqrt_mDB25CBFDA365A8A640BD764269A9EBBDDD068682 (double ___0_d, const RuntimeMethod* method) 
 {

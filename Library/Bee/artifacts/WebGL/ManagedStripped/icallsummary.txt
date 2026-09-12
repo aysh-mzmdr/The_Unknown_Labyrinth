@@ -7,8 +7,14 @@ UnityEngine.AnimationCurve::Internal_Equals
 UnityEngine.AnimationCurve::GetHashCode
 UnityEngine.AnimationCurve::Internal_Create
 UnityEngine.AnimationCurve::Internal_Destroy
-UnityEngine.AudioSource::PlayOneShotHelper
-UnityEngine.AudioSource::SetPitch
+UnityEngine.Animations.AnimationLayerMixerPlayable::SetSingleLayerOptimizationInternal
+UnityEngine.Animator::StringToHash
+UnityEngine.Animator::Play
+UnityEngine.Animator::SetBoolString
+UnityEngine.AudioSource::PlayHelper
+UnityEngine.AudioSource::Stop
+UnityEngine.AudioSource::set_clip
+UnityEngine.AudioSource::set_loop
 UnityEngine.Camera::GetAllCamerasCount
 UnityEngine.Camera::GetAllCamerasImpl
 UnityEngine.Camera::get_cullingMask
@@ -53,6 +59,7 @@ UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemSettings::Sc
 UnityEngine.GameObject::Internal_CreateGameObject
 UnityEngine.GameObject::SendMessage
 UnityEngine.GameObject::GetComponent
+UnityEngine.GameObject::GetComponentInParent
 UnityEngine.Gradient::Internal_Equals
 UnityEngine.Gradient::Init
 UnityEngine.Gradient::Cleanup
@@ -60,6 +67,7 @@ UnityEngine.Hash128::Hash128ToStringImpl_Injected
 UnityEngine.Input::CheckDisabled
 UnityEngine.Input::GetKeyDownInt
 UnityEngine.Input::GetKeyInt
+UnityEngine.Input::GetKeyUpInt
 UnityEngine.Input::GetMouseButton
 UnityEngine.Input::GetMouseButtonDown
 UnityEngine.Input::get_mousePosition_Injected
@@ -122,6 +130,8 @@ UnityEngine.Physics::Internal_RaycastAll_Injected
 UnityEngine.PhysicsScene::Internal_RaycastTest_Injected
 UnityEngine.PhysicsScene::Internal_Raycast_Injected
 UnityEngine.PhysicsScene::Internal_RaycastNonAlloc_Injected
+UnityEngine.Playables.PlayableHandle::IsValid_Injected
+UnityEngine.Playables.PlayableHandle::GetPlayableType_Injected
 UnityEngine.PlayerConnectionInternal::IsConnected
 UnityEngine.PlayerConnectionInternal::TrySendMessage
 UnityEngine.PlayerConnectionInternal::DisconnectAll
