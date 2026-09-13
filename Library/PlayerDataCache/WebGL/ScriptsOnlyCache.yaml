@@ -57,9 +57,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4732}
+      Script: {instanceID: 4370}
     - Class: 114
-      Script: {instanceID: 42062}
+      Script: {instanceID: 4734}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -389,6 +389,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerExitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: fca634e18e4fffc5f7c7f1c715c9c6ab
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WalkingAudioSync
   - hash:
       serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
@@ -899,12 +905,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: fca634e18e4fffc5f7c7f1c715c9c6ab
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WalkingAudioSync
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
