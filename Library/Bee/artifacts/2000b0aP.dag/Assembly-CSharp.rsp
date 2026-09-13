@@ -289,7 +289,11 @@
 -r:"Library/Bee/artifacts/2000b0aP.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Essentials/Unity/Editor/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/MainMenuController.cs"
 "Assets/Scripts/MazeFPController.cs"
+"Assets/Scripts/MenuOptionHighlighter.cs"
+"Assets/Scripts/OrbitCamera.cs"
+"Assets/Scripts/VictorySequence.cs"
 "Assets/Scripts/WalkingAudioSync.cs"
 -langversion:9.0
 /deterministic
