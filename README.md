@@ -4,9 +4,9 @@ A first-person horror maze game built in **Unity** and shipped to the browser wi
 
 ### ▶ [Play it in your browser](https://aysh-mzmdr.github.io/The_Unknown_Labyrinth/)
 
-No install or download needed. It runs in any modern desktop browser.
+No install or download needed. It runs on most desktop browsers.
 
-![In-game view: a torch-lit corridor fading into darkness](Assets/Screenshots/screenshot-20260913-163822.png)
+![In-game view: a torch-lit corridor fading into darkness](Hero.png)
 
 ---
 
@@ -25,7 +25,6 @@ No install or download needed. It runs in any modern desktop browser.
   - [Shipping Unity to the web on GitHub Pages](#7-shipping-unity-to-the-web-on-github-pages)
 - [Project Structure](#project-structure)
 - [Running Locally](#running-locally)
-- [Roadmap](#roadmap)
 
 ---
 
@@ -57,7 +56,7 @@ The game has a **main menu** with an animated background camera and a lit 3D pre
 | Gameplay code | **C#** (MonoBehaviours, Coroutines, `StateMachineBehaviour`) |
 | Rendering | Custom **HLSL / ShaderLab** shader (`Custom/RadialFogTextured`) |
 | Animation | Unity **Mecanim** Animator (Idle ↔ Walking state machine), FBX character rigs |
-| UI | Unity UI (uGUI), TextMesh Pro, `EventSystem` for mouse + keyboard navigation |
+| UI | Unity UI (uGUI) with legacy `Text`, and `EventSystem` for mouse + keyboard navigation |
 | Audio | Unity `AudioSource` with separate tracks for the menu, gameplay and victory, plus looping footsteps |
 | Physics | `CharacterController` collision, trigger volumes |
 | VFX | Runtime-built `ParticleSystem` + dynamic point lights |
@@ -144,8 +143,8 @@ Footsteps are driven by a `StateMachineBehaviour` attached to the **Walking** an
 
 [`VictorySequence.cs`](Assets/Scripts/VictorySequence.cs) builds the whole ending **at runtime, from code**, with no prefabs:
 - A scaled screen-space canvas with a pulsing "YOU WON!!!!" banner that has an outline and a drop shadow.
-- Fireworks: each burst is a `ParticleSystem` configured in code (sphere emitter, 40-particle burst, gravity, alpha fade over lifetime) with a short-lived **coloured point light** that fades over 0.4 s, so each burst lights up the maze walls.
-- A fallback shader lookup (`Particles/Standard Unlit` → `Legacy Shaders/Particles/Additive`) in case one shader is stripped from the build. Bursts clean themselves up with `stopAction = Destroy`.
+- Fireworks: each burst is a `ParticleSystem` configured in code (sphere emitter, 40-particle burst, gravity, alpha fade over lifetime) with a short-lived **coloured point light** that fades over 0.4 s. The light briefly illuminates lit objects such as the player model. The maze walls use the unlit fog shader, so they don't react to it.
+- The particle material is a **direct serialized reference** (`FireworkParticle.mat`, additive shader), so Unity always includes its shader in the build. A runtime `Shader.Find` can't be trusted for this, because shaders that no asset references get stripped. If the reference is ever missing, the code falls back to `Sprites/Default`, which is always included. Bursts clean themselves up with `stopAction = Destroy`.
 - A switch from the gameplay music to the victory music.
 
 ### 7. Shipping Unity to the web on GitHub Pages
@@ -190,4 +189,6 @@ docs/                            # WebGL build served by GitHub Pages
    ```
 3. Open the folder in Unity Hub, open `Assets/Scenes/SampleScene.unity` and press **Play**.
 4. To build for the web: **File → Build Settings → WebGL → Build**. Set the output folder to `docs/` and keep **Compression Format: Disabled** in Player Settings → Publishing Settings.
-5. To build for desktop: **File → Build Settings → Windows, Mac, Linux**, choose the **Target Platform** (Windows, macOS or Linux), then click **Build**. Pick an output folder outside `docs/` (for example `Builds/`) so the WebGL build isn't overwritten (If you wish to keept the WebGL version). If you build for a platform other than the one you're on, you'll also need that platform's Build Support module in Unity Hub.
+5. To build for desktop: **File → Build Settings → Windows, Mac, Linux**, choose the **Target Platform** (Windows, macOS or Linux), then click **Build**. Pick an output folder outside `docs/` (for example `Builds/`) so the WebGL build isn't overwritten (If you wish to keep the WebGL version). If you build for a platform other than the one you're on, you'll also need that platform's Build Support module in Unity Hub.
+
+> **Development note:** this project was built through an iterative, AI-assisted workflow, with Claude Code driving the Unity Editor through [Unity MCP](https://github.com/CoplayDev/unity-mcp). Design direction, iteration and testing were mine, and the wall and floor textures were made in Blender.

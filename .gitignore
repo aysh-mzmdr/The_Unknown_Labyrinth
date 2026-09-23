@@ -1,1 +1,41 @@
+# Unity generated
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Builds (keep these anchored with the leading slash: docs/Build is the deployed WebGL game)
+/[Bb]uild/
+/[Bb]uilds/
+
+# IDE / generated project files
+/.vs/
+/.vscode/
+/.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pdb
+*.mdb
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Project-specific
 text.md
+Game.zip
+/Assets/Screenshots/
+/Assets/Screenshots.meta
+
+# Raw source assets sitting in the repo root (already imported under Assets/)
+/*.fbx
+/*.png
+/*.jpg
+/*.mp3
+/*.wav
+/*.mp4

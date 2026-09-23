@@ -8,6 +8,7 @@ public class VictorySequence : MonoBehaviour
     public float fireworksDuration = 5f;
     public AudioSource musicSource;
     public AudioClip wonMusicClip;
+    public Material fireworkMaterial;
 
     private bool triggered = false;
 
@@ -146,7 +147,7 @@ public class VictorySequence : MonoBehaviour
         main.loop = false;
         main.startLifetime = 0.8f;
         main.startSpeed = 4f;
-        main.startSize = 0.15f;
+        main.startSize = 0.4f;
         main.gravityModifier = 1f;
         main.startColor = new ParticleSystem.MinMaxGradient(fireColor);
         main.stopAction = ParticleSystemStopAction.Destroy;
@@ -169,10 +170,13 @@ public class VictorySequence : MonoBehaviour
         colOverLife.color = grad;
 
         ParticleSystemRenderer psr = fx.GetComponent<ParticleSystemRenderer>();
-        Shader shader = Shader.Find("Particles/Standard Unlit");
-        if (shader == null) shader = Shader.Find("Legacy Shaders/Particles/Additive");
-        Material mat = new Material(shader);
-        psr.material = mat;
+        Material mat = fireworkMaterial;
+        if (mat == null)
+        {
+            Shader shader = Shader.Find("Sprites/Default");
+            if (shader != null) mat = new Material(shader);
+        }
+        if (mat != null) psr.sharedMaterial = mat;
 
         ps.Play();
 
