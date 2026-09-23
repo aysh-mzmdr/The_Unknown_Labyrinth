@@ -6,7 +6,7 @@ A first-person horror maze game built in **Unity** and shipped to the browser wi
 
 No install or download needed. It runs on most desktop browsers.
 
-![In-game view: a torch-lit corridor fading into darkness](Hero.png)
+![In-game view](Assets/Hero.png)
 
 ---
 
@@ -145,6 +145,7 @@ Footsteps are driven by a `StateMachineBehaviour` attached to the **Walking** an
 - A scaled screen-space canvas with a pulsing "YOU WON!!!!" banner that has an outline and a drop shadow.
 - Fireworks: each burst is a `ParticleSystem` configured in code (sphere emitter, 40-particle burst, gravity, alpha fade over lifetime) with a short-lived **coloured point light** that fades over 0.4 s. The light briefly illuminates lit objects such as the player model. The maze walls use the unlit fog shader, so they don't react to it.
 - The particle material is a **direct serialized reference** (`FireworkParticle.mat`, additive shader), so Unity always includes its shader in the build. A runtime `Shader.Find` can't be trusted for this, because shaders that no asset references get stripped. If the reference is ever missing, the code falls back to `Sprites/Default`, which is always included. Bursts clean themselves up with `stopAction = Destroy`.
+- A fallback shader lookup (`Particles/Standard Unlit` → `Legacy Shaders/Particles/Additive`) in case one shader is stripped from the build. Bursts clean themselves up with `stopAction = Destroy`.
 - A switch from the gameplay music to the victory music.
 
 ### 7. Shipping Unity to the web on GitHub Pages
