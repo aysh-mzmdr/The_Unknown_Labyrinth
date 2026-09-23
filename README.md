@@ -2,7 +2,7 @@
 
 A first-person horror maze game built in **Unity** and shipped to the browser with **WebGL**. You are a player in the winding labyrinth with only a small bubble of light around you. Find your way through long corridors, a concentric-circle chamber and the looping Catacombs to reach the exit.
 
-### ▶ [Play it in your browser](https://aysh-mzmdr.github.io/The_Unknown_Labyrinth/)
+### ▶ [Play it at itch.io](https://aysh-mzmdr.itch.io/the-unknown-labyrinth)
 
 No install or download needed. It runs on most desktop browsers.
 
